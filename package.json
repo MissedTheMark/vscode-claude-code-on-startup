@@ -1,0 +1,27 @@
+{
+  "name": "vscode-claude-code-on-startup",
+  "displayName": "Claude Code on Startup",
+  "description": "Automatically opens a Claude Code tab when VSCode starts",
+  "version": "0.1.0",
+  "engines": { "vscode": "^1.80.0" },
+  "categories": ["Other"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Claude Code on Startup",
+      "properties": {
+        "claudeCodeOnStartup.startupBehavior": {
+          "type": "string",
+          "enum": ["openLast", "openNew"],
+          "enumDescriptions": [
+            "Reopen the last Claude Code session",
+            "Always open a fresh Claude Code tab"
+          ],
+          "default": "openLast",
+          "description": "Which Claude Code tab to open when VSCode starts"
+        }
+      }
+    }
+  }
+}
