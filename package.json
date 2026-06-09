@@ -1,7 +1,9 @@
 {
+  "publisher": "mark",
   "name": "vscode-claude-code-on-startup",
   "displayName": "Claude Code on Startup",
-  "description": "Automatically opens a Claude Code tab when VSCode starts",
+  "description": "Automatically opens a Claude Code tab when VSCode starts. Choose between resuming your last session or opening a fresh tab.",
+  "icon": "icon.png",
   "version": "0.1.0",
   "engines": { "vscode": "^1.80.0" },
   "categories": ["Other"],
